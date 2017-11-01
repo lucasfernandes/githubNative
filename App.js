@@ -59,7 +59,9 @@ export default class App extends Component {
           <Tab heading="Repositórios">
             <Content>
               { this.state.loading && 
-                <Spinner />
+                <Container style={{ justifyContent: 'center'}}>
+                  <Spinner color="blue" />
+                </Container>
               }
               <List>
                 { this.state.repos.map(repo => (
@@ -76,7 +78,9 @@ export default class App extends Component {
           <Tab heading="Usuários">
             <Content>
               { this.state.loading && 
-                <Spinner />
+                <Container style={{ justifyContent: 'center'}}>
+                  <Spinner color="blue" />
+                </Container>
               }
               <List>
                 { this.state.users.map(user => (
